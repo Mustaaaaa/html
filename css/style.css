@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ul, ol{
+    list-style: none;
+}
+img{
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50px;
+}
+/* layout */
+
+
+
+/* style */
+.flex{
+    display: flex;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.main-header{
+    height: 70px;
+    background-color: #EAEAEA;
+    padding: 7px;
+    width: 100%;
+    border-left: 1px solid #B4B4B4;
+}
+.main-header .row{
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    
+}
+.profile-name{
+    font-weight: bold; 
+    font-size: 18px;
+}
+.last-access{
+    color: #808789;
+    font-size: 14px;
+}
+.message-section{
+    background-image: url(../img/mine.jpg);
+    max-width: calc(100% - 15px);
+    height: calc(100vh - 140px);
+    padding: 20px;
+}
+.message-section .col-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 3px;
+}
+.message-sent-section{
+    display: flex;
+    justify-content: flex-end;
+}
+.message-arrive-section{
+    padding-top: 15px;
+}
+.message-sent, .message-arrive{
+    width: 70%;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.hour-text{
+    font-size: 10px;
+}
+.write-message-section{
+    background-color: #EAEAEA;
+    height: 70px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px;
+}
+.write-message{
+    background-color: white;
+    padding: 15px;
+    border-radius: 7px;
+    display: flex;
+    flex-grow: 1;
+}
+.big-icon{
+    font-size: 25px;
+    padding: 8px;
+    color: #B4B4B4;
+}
+.write-message-tablet-version{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tablet-version{
+    display: none;
+}
+.side-bar{
+    border-bottom-left-radius: 15px;
+}
+/* col */
+.col-11{
+    width: calc(11 * 100 / 12);
+}
+.col-1{
+    width: calc(1 * 100 / 12);
+}
+/* background color */
+.bg-green{
+    background-color: #D5FABA;
+}
+.bg-white{
+    background-color: white;
+}
+.bg-lightgray{
+    background-color: #EAEAEA;
+}
+
+/* color */
+.lightgray{
+    color: #C7CACA;
+}
+
+@media (min-width:500px){
+    .tablet-version{
+        display: flex;
+        justify-content: space-between;
+    }
+    .profile-photo{
+        padding: 7px 15px;
+        border-top: 1px solid #EAEAEA;
+        height: 70px;
+    }
+}
+@media (min-width:980px){
+
+}

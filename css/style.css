@@ -29,6 +29,12 @@ img{
     display: flex;
     flex-direction: column;
 }
+.tablet-version{
+    display: none;
+}
+.desktop-version{
+    display: none;
+}
 .main-header{
     height: 70px;
     background-color: #EAEAEA;
@@ -74,6 +80,7 @@ img{
     font-size: 13px;
     border-radius: 10px;
     padding: 10px;
+    background-color: #D5FABA;
 }
 .hour-text{
     font-size: 10px;
@@ -102,12 +109,17 @@ img{
     justify-content: space-between;
     align-items: center;
 }
-.tablet-version{
-    display: none;
-}
 .side-bar{
     border-bottom-left-radius: 15px;
 }
+.profile-preview{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
 /* col */
 .col-11{
     width: calc(11 * 100 / 12);
@@ -115,9 +127,11 @@ img{
 .col-1{
     width: calc(1 * 100 / 12);
 }
+.col-
 /* background color */
 .bg-green{
     background-color: #D5FABA;
+
 }
 .bg-white{
     background-color: white;
@@ -125,7 +139,6 @@ img{
 .bg-lightgray{
     background-color: #EAEAEA;
 }
-
 /* color */
 .lightgray{
     color: #C7CACA;
@@ -133,8 +146,7 @@ img{
 
 @media (min-width:500px){
     .tablet-version{
-        display: flex;
-        justify-content: space-between;
+        display: contents;
     }
     .profile-photo{
         padding: 7px 15px;
@@ -143,5 +155,11 @@ img{
     }
 }
 @media (min-width:980px){
+    .desktop-version{
+        display: contents;
+    }
+    .profile-preview{
+        width: 370px;
 
+    }
 }

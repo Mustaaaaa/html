@@ -43,12 +43,12 @@ img{
     
 }
 .profile-name{
-    font-weight: bold; 
-    font-size: 18px;
+    font-weight: 600; 
+    font-size: 16px;
 }
 .last-access{
     color: #808789;
-    font-size: 14px;
+    font-size: 13px;
 }
 .message-section{
     background-image: url(../img/mine.jpg);
@@ -91,12 +91,23 @@ img{
     display: flex;
     flex-grow: 1;
 }
+.search-chat{
+    padding: 8px;
+}
+.search-chat .write-message{
+    border-radius: 0;
+    padding: 10px;
+}
+.search-chat .write-message i{
+    padding-right: 15px;
+    padding-left: 10px;
+}
 .big-icon{
     font-size: 25px;
     padding: 8px;
     color: #B4B4B4;
 }
-.write-message-tablet-version{
+.write-message-section .row{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,6 +116,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 70px;
 }
 hr{
     border: 0;
@@ -117,14 +129,31 @@ hr{
     flex-grow: 1;
     padding: 10px;
 }
-.side-bar{
+.ring-slash-icon{
+    background-color: white;
+    border-radius: 50px;
+    width: 50px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.receive-notification{
+    padding: 15px;
+}
+.ring-slash-icon-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
 }
 .side-bar .profile-preview .profile-description .message-arrive-hour{
     align-self: flex-start;
 }
 /* display none */
-.icon-header, .icon-write-message-section, .profile-description, .side-bar{
+.icon-header, .icon-write-message-section, .profile-description, .side-bar,
+.side-bar .big-icon, .receive-notification, .search-chat{
     display: none;
 }
 
@@ -144,7 +173,6 @@ hr{
 /* background color */
 .bg-green{
     background-color: #D5FABA;
-
 }
 .bg-white{
     background-color: white;
@@ -152,17 +180,23 @@ hr{
 .bg-lightgray{
     background-color: #EAEAEA;
 }
+.bg-cyan{
+    background-color: #A6D7F9;
+}
 /* color */
 .lightgray{
     color: #C7CACA;
+}
+.darkgray{
+    color: #5B7384;
+}
+.cyan{
+    color: #A6D7F9;
 }
 
 @media (min-width:500px){
     .side-bar, .icon-write-message-section, .icon-header {
         display: flex;
-    }
-    .side-bar .big-icon{
-        display: none;
     }
     .profile-photo{
         padding: 7px 15px;
@@ -172,11 +206,12 @@ hr{
 @media (min-width:980px){
     .profile-preview{
         width: 370px;
+        height: 70px;
     }
     .side-bar .big-icon{
         display: inline;
     }
-    .profile-description{
+    .profile-description, .receive-notification, .search-chat{
         display: flex;
     }
 }

@@ -8,9 +8,7 @@ ul, ol{
     list-style: none;
 }
 img{
-    width: 50px;
-    aspect-ratio: 1/1;
-    border-radius: 50px;
+    width: 100%;
 }
 /* layout */
 
@@ -36,6 +34,11 @@ img{
     width: 100%;
     border-left: 1px solid #B4B4B4;
 }
+.chat-header img, .profile-preview img, .my-profile-preview img{
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50px;
+}
 .chat-header .row{
     gap: 15px;
     display: flex;
@@ -44,7 +47,7 @@ img{
 }
 .profile-name{
     font-weight: 600; 
-    font-size: 16px;
+    font-size: 15px;
 }
 .last-access{
     color: #808789;
@@ -92,16 +95,40 @@ img{
     display: flex;
     flex-grow: 1;
 }
-.search-chat{
+.search-bar{
     padding: 8px;
 }
-.search-chat .write-message{
+.search-bar .write-message{
     border-radius: 0;
     padding: 10px;
 }
-.search-chat .write-message i{
+.search-bar .write-message i{
     padding-right: 15px;
     padding-left: 10px;
+}
+.search-bar{
+    padding: 10px;
+    background-color: #EAEAEA;
+    position: relative;
+}
+.write-text i {
+	position: absolute;
+	left: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #b1b1b1;
+}
+.write-text input:focus-visible {
+	padding-left: 15px;
+}
+
+.write-text input {
+    width: 350px;
+	height: 34px;
+	background-color: white;
+	border: 1px solid darkgray;
+	padding-left: 60px;
+	transition: linear 100ms;
 }
 .big-icon{
     font-size: 25px;
@@ -141,7 +168,7 @@ hr{
 
 }
 .receive-notification{
-    padding: 15px;
+    padding: 10px;
 }
 .ring-slash-icon-description{
     display: flex;
@@ -154,7 +181,7 @@ hr{
 }
 /* display none */
 .icon-header, .icon-write-message-section, .profile-description, .side-bar,
-.side-bar .big-icon, .receive-notification, .search-chat{
+.side-bar .big-icon, .receive-notification, .search-bar, .write-text input:focus-visible + i {
     display: none;
 }
 
@@ -212,7 +239,7 @@ hr{
     .side-bar .big-icon{
         display: inline;
     }
-    .profile-description, .receive-notification, .search-chat{
+    .profile-description, .receive-notification, .search-bar{
         display: flex;
     }
     .message-section{

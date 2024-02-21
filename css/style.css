@@ -175,6 +175,10 @@ hr{
 .side-bar .profile-preview .profile-description .message-arrive-hour{
     align-self: flex-start;
 }
+.profile-scroll{
+    height: calc(95vh - 194px);
+    overflow: auto;
+}
 /* display none */
 .icon-header, .icon-write-message-section, .profile-description, .side-bar,
 .side-bar .big-icon, .receive-notification, .search-bar, .write-text input:focus-visible + i {

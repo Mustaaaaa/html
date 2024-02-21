@@ -188,12 +188,6 @@ hr{
 .col-1{
     width: calc(1 * 100 / 12);
 }
-.col-8{
-    width: calc(8 * 100 / 12);
-}
-.col-4{
-    width: calc(4 * 100 / 12);
-}
 /* background color */
 .bg-green{
     background-color: #D5FABA;

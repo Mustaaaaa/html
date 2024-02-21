@@ -88,41 +88,23 @@ img{
     height: 70px;
     padding: 10px;
 }
-.write-message{
-    background-color: white;
-    padding: 15px;
-    border-radius: 7px;
-    display: flex;
-    flex-grow: 1;
-}
-.search-bar{
-    padding: 8px;
-}
-.search-bar .write-message{
-    border-radius: 0;
-    padding: 10px;
-}
-.search-bar .write-message i{
-    padding-right: 15px;
-    padding-left: 10px;
-}
 .search-bar{
     padding: 10px;
     background-color: #EAEAEA;
     position: relative;
 }
-.write-text i {
+.search-bar .write-text i {
 	position: absolute;
 	left: 30px;
 	top: 50%;
 	transform: translateY(-50%);
 	color: #b1b1b1;
 }
-.write-text input:focus-visible {
+.search-bar .write-text input:focus-visible {
 	padding-left: 15px;
 }
 
-.write-text input {
+.search-bar .write-text input {
     width: 350px;
 	height: 34px;
 	background-color: white;
@@ -130,6 +112,20 @@ img{
 	padding-left: 60px;
 	transition: linear 100ms;
 }
+.write-message-bar{
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
+.write-message-bar .write-text input{
+    width: 100%;
+    height: 40px;
+	background-color: white;
+	border: 1px solid darkgray;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
 .big-icon{
     font-size: 25px;
     padding: 8px;
